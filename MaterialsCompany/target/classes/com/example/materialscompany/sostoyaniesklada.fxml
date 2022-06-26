@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="510.0" prefWidth="700.0" style="-fx-background-color: #7B68EE;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.materialscompany.SostoyanieSkladaController">
+    <children>
+        <TableView fx:id="table1" layoutX="19.0" layoutY="75.0" prefHeight="360.0" prefWidth="662.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="41.0" text="ID" />
+                <TableColumn fx:id="naimenovanie" prefWidth="269.0" text="Наименование" />
+                <TableColumn fx:id="kolechestvo" prefWidth="188.0" text="Количество" />
+                <TableColumn fx:id="edizmerenie" prefWidth="163.0" text="Ед. измерения" />
+            </columns>
+        </TableView>
+        <Button fx:id="naGlavnuyuButton" layoutX="559.0" layoutY="445.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: f39c63;" text="На главную" />
+        <Button fx:id="vernutsaVMenuButton" layoutX="559.0" layoutY="477.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: f39c63;" text="Вернуться в меню" />
+      <TextField fx:id="poiskField" layoutX="19.0" layoutY="445.0" promptText="Поиск" />
+      <Label layoutX="206.0" layoutY="14.0" prefHeight="40.0" prefWidth="289.0" text="Состояние склада" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRem1" layoutX="176.0" layoutY="445.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: f39c63;" text="Удалить" />
+      <Button fx:id="btnAdd1" layoutX="176.0" layoutY="477.0" mnemonicParsing="false" style="-fx-background-color: f39c63;" text="Добавить" />
+      <Pane fx:id="paneAdd1" layoutX="255.0" layoutY="170.0" prefHeight="247.0" prefWidth="200.0" style="-fx-background-color: #7B68EE; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 2;" visible="false">
+         <children>
+            <TextField fx:id="tfNaim" alignment="CENTER" layoutX="26.0" layoutY="66.0" promptText="Наименование" />
+            <TextField fx:id="tfKol" alignment="CENTER" layoutX="26.0" layoutY="99.0" promptText="Количество" />
+            <TextField fx:id="tfEdIz" alignment="CENTER" layoutX="26.0" layoutY="131.0" promptText="Ед. Измерения" />
+            <Button fx:id="btnSave1" layoutX="63.0" layoutY="165.0" mnemonicParsing="false" style="-fx-background-color: f39c63;" text="Сохранить" />
+            <Button fx:id="btnBack1" layoutX="63.0" layoutY="196.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: f39c63;" text="Отменить" />
+            <TextField fx:id="tfNum1" alignment="CENTER" layoutX="25.0" layoutY="33.0" promptText="№" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

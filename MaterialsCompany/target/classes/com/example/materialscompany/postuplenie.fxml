@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="510.0" prefWidth="700.0" style="-fx-background-color: #7B68EE;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.materialscompany.PostuplenieController">
+    <children>
+        <TableView fx:id="table3" layoutX="19.0" layoutY="74.0" prefHeight="360.0" prefWidth="662.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="31.0" text="ID" />
+                <TableColumn fx:id="datapostupleniya" prefWidth="135.0" text="Дата поступления" />
+                <TableColumn fx:id="codematerials" prefWidth="98.0" text="Код материала" />
+                <TableColumn fx:id="materials" prefWidth="115.0" text="Материал" />
+                <TableColumn fx:id="kolichestvo" prefWidth="78.0" text="Количество" />
+                <TableColumn fx:id="cena" prefWidth="42.0" text="Цена" />
+                <TableColumn fx:id="edizmerenie" prefWidth="95.0" text="Ед. измерения" />
+                <TableColumn fx:id="summa" prefWidth="68.0" text="Сумма" />
+            </columns>
+        </TableView>
+        <Button fx:id="naGlavnuyuButton" layoutX="559.0" layoutY="440.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: f39c63;" text="На главную" />
+        <Button fx:id="vernutsaVMenuButton" layoutX="559.0" layoutY="474.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: f39c63;" text="Вернуться в меню" />
+      <TextField fx:id="poiskField" layoutX="19.0" layoutY="440.0" promptText="Поиск" />
+      <Label layoutX="241.0" layoutY="14.0" prefHeight="40.0" prefWidth="219.0" text="Поступление" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Italic" size="36.0" />
+         </font>
+      </Label>
+      <Pane fx:id="paneAdd3" layoutX="170.0" layoutY="170.0" prefHeight="247.0" prefWidth="360.0" style="-fx-background-color: #7B68EE; -fx-border-radius: 15; -fx-border-width: 2; -fx-border-color: black; -fx-background-radius: 15;" visible="false">
+         <children>
+            <TextField fx:id="tfKolvo" alignment="CENTER" layoutX="197.0" layoutY="53.0" promptText="Количество" />
+            <Button fx:id="btnSave3" layoutX="143.0" layoutY="183.0" mnemonicParsing="false" style="-fx-background-color: f39c63;" text="Сохранить" />
+            <Button fx:id="btnBack3" layoutX="143.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: f39c63;" text="Отменить" />
+            <TextField fx:id="tfNum3" alignment="CENTER" layoutX="14.0" layoutY="53.0" promptText="№" />
+            <TextField fx:id="tfCena" alignment="CENTER" layoutX="197.0" layoutY="84.0" promptText="Цена" />
+            <TextField fx:id="tfDatPost" alignment="CENTER" layoutX="14.0" layoutY="84.0" promptText="Дата поступления" />
+            <TextField fx:id="tfEdIz3" alignment="CENTER" layoutX="197.0" layoutY="117.0" promptText="Ед. измерения" />
+            <TextField fx:id="tfCodeMat" alignment="CENTER" layoutX="14.0" layoutY="117.0" promptText="Код материала" />
+            <TextField fx:id="tfSumma3" alignment="CENTER" layoutX="197.0" layoutY="150.0" promptText="Сумма" />
+            <TextField fx:id="tfMat3" alignment="CENTER" layoutX="14.0" layoutY="150.0" promptText="Материал" />
+         </children>
+      </Pane>
+      <Button fx:id="btnRem3" layoutX="179.0" layoutY="440.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: f39c63;" text="Удалить" />
+      <Button fx:id="btnAdd3" layoutX="179.0" layoutY="474.0" mnemonicParsing="false" style="-fx-background-color: f39c63;" text="Добавить" />
+    </children>
+</AnchorPane>
